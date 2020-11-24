@@ -1,0 +1,285 @@
+body,
+html {
+	font-family: "Lato", serif;
+	color: #111827;
+	height: 100%;
+}
+
+/* Utility class */
+.flex {
+	display: flex;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+
+.justify-content-between {
+	justify-content: space-between;
+}
+
+.container {
+	max-width: 768px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px 10px;
+}
+
+.mt-10 {
+	margin-top: 10px;
+}
+
+.mt-20 {
+	margin-top: 20px;
+}
+
+/* Navbar */
+.navbar {
+	display: flex;
+	align-items: center;
+	background-color: #ea580c;
+	font-family: "Gochi Hand", serif;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	font-size: 20px;box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+}
+
+.navbar > a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 16px 20px;
+}
+
+.navbar > a:hover {
+	background-color: #f97316;
+}
+
+/* Header section */
+.header-section {
+	background-image: url("https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 90%;
+	text-align: center;
+}
+
+.header-title {
+	color: white;
+	font-family: "Gochi Hand", serif;
+	font-size: 80px;
+}
+
+.header-button {
+	display: inline-block;
+	padding: 16px 20px;
+	background-color: #111827;
+	text-decoration: none;
+	font-family: "Gochi Hand", serif;
+	font-size: 20px;
+	color: white;
+	border-radius: 10px;
+	transition: all 250ms ease-in-out;
+}
+
+.header-button:hover {
+	transform: scale(1.1);
+	background-color: #ea580c;
+}
+
+/* Menu section */
+.menu-section {
+	background-color: #111827;
+	padding: 100px 0px;
+}
+
+.menu-title {
+	color: white;
+	font-family: "Gochi Hand", serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.menu-grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	grid-gap: 16px;
+}
+
+@media screen and (max-width: 768px) {
+	.menu-grid {
+		grid-template-columns: repeat(1, minmax(0, 1fr));
+	}
+}
+
+.menu-card {
+	background: white;
+	padding: 14px;
+	border-radius: 10px;
+	transition: transform 250ms ease-in-out;
+}
+
+.menu-card:hover {
+	transform: scale(1.02);
+}
+
+.menu-card-image {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 10px;
+}
+
+.menu-card-title {
+	font-size: 24px;
+	color: #ea580c;
+	font-family: "Gochi Hand", serif;
+}
+
+.menu-card-desc {
+	font-size: 14px;
+	color: #666;
+	font-family: "Lato", serif;
+}
+
+.menu-card-price {
+	color: white;
+	font-weight: bold;
+	background-color: #ea580c;
+	padding: 5px 8px;
+	border-radius: 10px;
+	font-family: "Lato", serif;
+}
+
+/* About section */
+.about-section {
+	background-color: #ea580c;
+	padding: 100px 0px;
+}
+
+.about-title {
+	color: white;
+	font-family: "Gochi Hand", serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.about-subtitle {
+	color: white;
+	font-family: "Gochi Hand", serif;
+	font-size: 30px;
+	text-align: center;
+}
+
+.about-image {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 10px;
+}
+
+.about-chef-image {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	object-position: top;
+	border-radius: 9999px;
+}
+
+.about-desc {
+	color: white;
+	font-family: "Lato", serif;
+	text-align: center;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border-radius: 10px;
+  overflow: hidden;
+}
+
+th {
+	color: white;
+	text-align: center;
+	padding: 20px 24px;
+	font-weight: bold;
+  background-color: #111827;
+}
+
+td {
+	text-align: center;
+	padding: 10px 10px;
+	font-weight: bold;
+  background-color: white;
+}
+
+/* Contact section */
+.contact-section {
+	background-color: #111827;
+	padding: 100px 0px;
+}
+
+.contact-title {
+	color: white;
+	font-family: "Gochi Hand", serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.contact-input {
+	width: 100%;
+	padding: 16px 20px;
+	background-color: white;
+	font-size: 20px;
+	margin-top: 20px;
+	font-family: "Lato", serif;
+	border-radius: 10px;
+	outline: none;
+	box-sizing: border-box;
+	border: none;
+}
+
+.contact-button {
+	margin-top: 20px;
+	padding: 16px 20px;
+	background-color: #ea580c;
+	text-decoration: none;
+	font-family: "Gochi Hand", serif;
+	font-size: 20px;
+	color: white;
+	width: 100%;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	transition: all 250ms ease-in-out;
+}
+
+.contact-button:hover {
+	transform: scale(1.1);
+	background-color: #ea580c;
+}
+
+.contact-desc {
+	color: white;
+	font-family: "Lato", serif;
+	text-align: center;
+}
+
+/* Footer */
+.footer {
+	color: white;
+	background-color: #ea580c;
+	padding: 50px 0px;
+}
